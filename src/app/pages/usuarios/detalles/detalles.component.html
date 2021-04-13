@@ -1,0 +1,32 @@
+<div class="card card mt-2">
+  <div class="card-header">Detalles de usuario</div>
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        Nombre:
+        <h5>{{usuario.nombre}}</h5>
+      </li>
+      <li class="list-group-item">
+        Correo:
+        <h5>{{usuario.correo}}</h5>
+      </li>
+      <li class="list-group-item">
+        Identificación:
+        <h5>{{usuario.identificacion}}</h5>
+      </li>
+      <li class="list-group-item">
+        Celular:
+        <h5>{{usuario.celular}}</h5>
+      </li>
+      <li class="list-group-item">
+        Contraseña:
+        <h5>{{usuario.contrasena}}</h5>
+      </li>
+    </ul>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-outline-warning m-1 btn-sm" (click)="onGoToEdit()">Editar</button>
+    <button type="button" class="btn btn-outline-danger m-1 btn-sm" (click)="onGoToDelete()">Eliminar</button>
+  </div>
+</div>
+<button type="button" class="btn btn-secondary mt-2" (click)="onGoBack()">Volver</button>
